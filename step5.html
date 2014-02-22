@@ -10,10 +10,16 @@
 	<div ng-controller="TaskListCtrl">
 		<ul>
 			<li ng-repeat="task in tasks">
-				{{ task.Name }} - {{ task.Status }}
+				{{ task.name }} - {{ task.status }}
 			</li>
 		</ul>
 		<button ng-click="refresh()">Refresh</button>
+	</div>
+
+	<div ng-controller="NewTaskCtrl">
+		<label>Name</label>
+		<input ng-model="taskName">
+		<button ng-click="createTask()">Create</button>
 	</div>
 
 	<script src="lib/angular/angular.js"></script>
