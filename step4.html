@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello AngularJS: Step 4!</title>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body ng-app="app">
+	<h1>Hello AngularJS</h1>
+
+	<div ng-controller="FriendsCtrl">
+		<button ng-click="getFriends()">Get Friends!</button>
+		<ul>
+			<li ng-repeat="friend in friends">
+				{{ friend.lastName }}, {{ friend.firstName }}
+			</li>
+		</ul>
+	</div>
+
+	<script src="lib/angular/angular.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
