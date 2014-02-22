@@ -1,12 +1,14 @@
 'use strict';
 
 angular.module('app', [])
-  .controller('FriendsCtrl', function ($scope, $http) {
-    $scope.getFriends = function () {
-      $http.get('api/friends').success(function (data) {
-        $scope.friends = data;
-      }).error(function () {
-        alert('PANIC! An error occured!');
+  .controller('TaskListCtrl', function ($scope, $http) {
+    $http.get('api/tasks').success(function (data) {
+      $scope.tasks = data;
+    });
+
+    $scope.refresh = function () {
+      $http.get('api/tasks').success(function (data) {
+        $scope.tasks = data;
       });
     };
   });
