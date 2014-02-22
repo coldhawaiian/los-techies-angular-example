@@ -1,0 +1,19 @@
+{
+  "name": "los-techies-angular-example",
+  "version": "0.0.0",
+  "authors": [
+    "Keoki Zee <cold.boston.hawaiian@gmail.com>"
+  ],
+  "license": "None",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.2.13"
+  }
+}
