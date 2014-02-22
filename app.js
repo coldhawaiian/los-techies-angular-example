@@ -11,8 +11,17 @@ angular.module('app', [])
     };
   })
   .controller('ParentCtrl', function ($scope) {
-    $scope.title = "Title set by parent";
+    $scope.model = { title: "Title set by parent" };
+    $scope.greet = function () {
+      alert("Hi, I'm the parent!");
+    };
   })
   .controller('ChildCtrl', function ($scope) {
     $scope.content = "Content set by child";
+    $scope.greet = function () {
+      alert("Hi, I'm the child!");
+    };
+    $scope.setModel = function () {
+      $scope.model = { title: "Test from child!" };
+    };
   });

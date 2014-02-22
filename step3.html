@@ -8,11 +8,17 @@
 	<h1>Hello AngularJS</h1>
 
 	<div ng-controller="ParentCtrl" class="scope">
-		<input ng-model="title">
+
+		<input ng-model="model.title">
+		<button ng-click="greet()">Greet</button>
+
 		<div ng-controller="ChildCtrl" class="scope">
-			<input ng-model="title">
+			<input ng-model="model.title">
 			<input ng-model="content">
+			<button ng-click="greet()">Greet</button>
+			<button ng-click="setModel()">Set Model</button>
 		</div>
+
 	</div>
 
 	<script src="lib/angular/angular.js"></script>
