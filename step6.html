@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello AngularJS: Step 4!</title>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body ng-app="app">
+	<h1>Hello AngularJS</h1>
+
+	<div ng-controller="PersonCtrl">
+		<div ng-repeat="person in persons">
+			{{ person.name.last }}, {{ person.name.first }} {{ person.name.middle }}
+		</div>
+	</div>
+
+	<script src="lib/angular/angular.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
