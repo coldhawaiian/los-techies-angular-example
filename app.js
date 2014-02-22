@@ -9,4 +9,10 @@ angular.module('app', [])
     $scope.alert = function (name) {
       alert('Hello ' + name);
     };
+  })
+  .controller('ParentCtrl', function ($scope) {
+    $scope.title = "Title set by parent";
+  })
+  .controller('ChildCtrl', function ($scope) {
+    $scope.content = "Content set by child";
   });
