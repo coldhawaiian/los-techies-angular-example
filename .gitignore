@@ -1,5 +1,8 @@
 # Ignore Bower components
 bower_components/
 
+# Ignore Node modules
+node_modules/
+
 # Ignore OS X system files
 .DS_Store
