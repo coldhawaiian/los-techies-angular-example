@@ -45,6 +45,25 @@
 				</div>
 			</script>
 		</section>
+
+		<section>
+			<h1>A tree</h1>
+			<div ng-controller="TreeCtrl">
+				<ul>
+					<li ng-repeat="node in tree"
+							ng-include="'node.html'">
+					</li>
+				</ul>
+			</div>
+			<script type="text/ng-template" id="node.html">
+				{{ node.name }}
+				<ul>
+					<li ng-repeat="node in node.children"
+							ng-include="'node.html'">
+					</li>
+				</ul>
+			</script>
+		</section>
 	</div>
 
 	<script src="lib/angular/angular.js"></script>
