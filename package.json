@@ -1,0 +1,23 @@
+{
+  "name": "los-techies-angular-example",
+  "version": "0.0.0",
+  "description": "Los Techies Angular Example ===========================",
+  "main": "index.html",
+  "dependencies": {
+    "restify": "~2.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/coldhawaiian/los-techies-angular-example.git"
+  },
+  "author": "",
+  "license": "None",
+  "bugs": {
+    "url": "https://github.com/coldhawaiian/los-techies-angular-example/issues"
+  },
+  "homepage": "https://github.com/coldhawaiian/los-techies-angular-example"
+}
