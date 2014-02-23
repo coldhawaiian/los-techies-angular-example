@@ -1,3 +1,18 @@
+.container {
+  width: 500px;
+  padding: 0.5em;
+  margin: auto;
+}
+.container > * {
+  margin: 2% auto;
+  width: 70%;
+}
+.male {
+  background-color: rgb(205, 205, 255);
+}
+.female {
+  background-color: rgb(255, 205, 205);
+}
 .scope {
   border: 1px solid black;
   margin-bottom: 10px;
@@ -6,4 +21,10 @@
 .scope > * {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+.person {
+  border: 1px solid black;
+  margin-bottom: 5px;
+  padding: 2px;
+  width: 200px;
 }
