@@ -13,6 +13,16 @@
 .female {
   background-color: rgb(255, 205, 205);
 }
+.question {
+  border: 1px solid darkgray;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.answer {
+  border: 1px solid lightgray;
+  padding: 5px;
+  background: linear-gradient(lightgray, gray);
+}
 .scope {
   border: 1px solid black;
   margin-bottom: 10px;
